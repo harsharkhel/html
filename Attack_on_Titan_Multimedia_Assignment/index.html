@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attack on Titan - Fan Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Attack on Titan</h1>
+        <p class="tagline">A Multimedia Fan Page</p>
+    </header>
+
+    <main>
+
+        <!-- Main Image -->
+        <section class="hero">
+            <img src="attack-on-titan.jpg" alt="Attack on Titan artwork">
+        </section>
+
+        <!-- Introduction -->
+        <section>
+            <h2>About Attack on Titan</h2>
+            <p>
+                Attack on Titan is a Japanese anime and manga series created by
+                Hajime Isayama. The story takes place in a world where humanity
+                lives behind enormous walls to protect themselves from giant
+                creatures known as Titans.
+            </p>
+
+            <p>
+                The story follows Eren Yeager, Mikasa Ackerman, Armin Arlert,
+                and other members of the Survey Corps as they discover the
+                mysteries behind the Titans and the world around them.
+            </p>
+        </section>
+
+        <!-- YouTube Video -->
+        <section>
+            <h2>Attack on Titan Video</h2>
+            <div class="video-container">
+                <iframe
+                    src="https://www.youtube.com/embed/MGRm4IzK1SQ"
+                    title="Attack on Titan video"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <!-- Audio -->
+        <section>
+            <h2>Attack on Titan Audio</h2>
+            <p>Listen to a related audio clip:</p>
+
+            <!-- Put your own MP3 file in this folder and name it aot-theme.mp3 -->
+            <audio controls>
+                <source src="aot-theme.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <p class="note">
+                Note: Add an MP3 file named <strong>aot-theme.mp3</strong>
+                to this folder for the audio player to work.
+            </p>
+        </section>
+
+        <!-- Subscription Form -->
+        <section class="subscribe">
+            <h2>Subscribe for Updates</h2>
+            <p>Enter your details to receive Attack on Titan updates.</p>
+
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                    required>
+
+                <label for="email">Email:</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required>
+
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Attack on Titan Fan Page | Created for Web Technology Assignment 3</p>
+    </footer>
+
+</body>
+</html>
