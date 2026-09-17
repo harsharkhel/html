@@ -1,0 +1,17 @@
+
+        h1{
+            color:rgb(58, 73, 73)
+        }
+        h2{
+            color:rgb(243, 247, 0)
+        }
+        h3{
+            color:oklab(from color l a b)
+        }
+        .world{
+            color: rgba(204, 51, 82, 0.634);
+        }
+        #program{
+            color: cornflowerblue;
+        }
+
