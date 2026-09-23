@@ -1,0 +1,76 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Cards</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 40px;
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;              /* Space between cards */
+            justify-content: center;
+        }
+
+        .card {
+            width: 250px;
+
+            /* CSS Box Model */
+            margin: 10px;
+            padding: 25px;
+            border: 2px solid #53caca;;
+
+            background-color: white;
+            border-radius: 10px;
+
+            transition: 0.3s;
+        }
+
+        .card h2 {
+            margin-top: 0;
+        }
+
+        /* Hover Effect */
+        .card:hover {
+            background-color: #dff6ff;
+            border: 5px solid #54a3ce;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="card">
+            <h2></h2>L</h2>
+            <p>HTML is used to create the structure of a webpage.</p>
+        </div>
+
+        <div class="card">
+            <h2>CSS</h2>
+            <p>CSS is used to style and design a webpage.</p>
+        </div>
+
+        <div class="card">
+            <h2>JavaScript</h2>
+            <p>JavaScript is used to add functionality and interaction.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
+```

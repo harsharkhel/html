@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 20vw;
+            width: 20vh;
+           background-color: rgb(197, 197, 254);
+            padding:20px;
+            margin: 30px;
+            border: 50px double rgb(181, 234, 248);
+        }
+         .relative {
+                position: absolute;
+                right:50px;
+                left:100px;
+                bottom:100px;
+
+            }
+            h1{
+                color:aquamarine
+            }
+    </style>
+</head>
+
+
+<!-- <body>
+    <nav>
+        <h1>
+            Artificial intelligence 
+        </h1>
+    </nav>
+    <P>
+        "AI" redirects here. For other uses, see AI (disambiguation) and Artificial intelligence (disambiguation).
+Part of a series on
+Artificial intelligence (AI)
+Major goals
+Approaches
+Applications
+Philosophy
+History
+Controversies
+Glossary
+vte
+Artificial intelligence (AI) is the capability of computational systems to perform tasks typically associated with human intelligence, such as learning, reasoning, problem-solving, perception, and decision-making. It is a field of research in engineering, mathematics, and computer science that develops and studies methods and software that enable machines to perceive their environment and use learning and intelligence to take actions that maximise their chances of achieving defined goals.[1]
+
+High-profile applications of AI include advanced web search engines, chatbots, virtual assistants, autonomous vehicles, play and analysis in strategy games (e.g., chess and Go), and content generation (e.g., text, images, audio, and videos).
+
+The traditional goals of AI research include learning, reasoning, knowledge representation, planning, natural language processing, and perception, as well as support for robotics.[a] To reach these goals, AI researchers use techniques including state space search and mathematical optimisation, formal logic, artificial neural networks, and methods based on statistics, operations research, and economics.[b] AI also draws upon psychology, linguistics, philosophy, neuroscience, and other fields.[2] Some companies, such as OpenAI, Google DeepMind, and Meta, aim to create artificial general intelligence (AGI)—AI that can complete nearly any cognitive task at least as well as a human.[3]
+
+Artificial intelligence was founded as an academic discipline in 1956.[4] The field went through multiple cycles of optimism throughout its history,[5][6] followed by periods of disappointment and loss of funding, known as AI winters.[7][8] Funding and interest increased substantially after 2012, when graphics processing units (GPUs) started being used to accelerate neural networks, and deep learning outperformed previous AI techniques.[9] This growth accelerated further after 2017 with the transformer architecture.[10] In the 2020s, an AI boom coincided with advances in generative AI, which became widespread and allowed for the creation and modification of media. In addition to AI safety and unintended consequences and harms from the use of AI, ethical concerns, AI's long-term effects, environmental effects,[11] and potential existential risks have prompted discussions of AI regulation.
+    </P>
+    <P>
+        Goals
+The general problem of simulating (or creating) intelligence has been broken down into subproblems. These consist of specific traits or capabilities that researchers expect an intelligent system to display. The traits described below have received the most attention and cover the scope of AI research.[a]
+
+
+    </P>
+    <P>
+        Reasoning and problem-solving
+Early researchers developed algorithms that imitated step-by-step reasoning that humans use when solving puzzles or making logical deductions.[12] By the late 1980s and 1990s, methods were developed for dealing with uncertain or incomplete information, employing concepts from probability and economics.[13]
+
+Many of these algorithms were insufficient for solving large reasoning problems because they experienced a "combinatorial explosion", meaning they become exponentially slower as the problems grow.[14] Even humans rarely use the step-by-step deduction that early AI research could model. Humans solve most of their problems using fast, intuitive judgments.[15]
+
+Reasoning models, a type of large language model (LLM) trained to generate intermediate chains of thought, emerged in 2024 and allowed improved performance on complex problems in mathematics and coding.[16] These models can produce incorrect outputs or "hallucinations," unlike symbolic reasoning systems.[17]
+
+
+    </P>
+    <!-- <div class ="container">
+        <div class = "box">Box1</div>
+        <div class = "box relative">Box2</div>
+        <div class = "box">Box3</div>
+    </div> -->
+<!-- </body> --> -->
+
+<body>
+ 
+<header>
+  <div class="masthead">
+    <h1>Artificial Intelligence</h1>
+    <span class="label">A field guide, condensed from Wikipedia</span>
+  </div>
+  <nav>
+    <a href="#goals">Goals</a>
+    <a href="#how">How it works</a>
+    <a href="#applications">Applications</a>
+    <a href="#risks">Risks &amp; ethics</a>
+    <a href="#history">History</a>
+    <a href="#future">Future</a>
+  </nav>
+</header>
+ 
+<main>
+  <p class="intro">
+    Artificial intelligence is the capability of computational systems to perform tasks normally
+    associated with human thought — learning, reasoning, perceiving, deciding. It's less a single
+    technology than <strong>a shifting label</strong>: once a technique works reliably, it usually
+    stops being called "AI" and starts being called software. This page walks through what the
+    field is trying to do, how today's systems do it, where they're already embedded in daily life,
+    and the open arguments about where all of this leads.
+  </p>
+ 
+  <section id="goals">
+    <h2><span class="num">01</span>What AI is trying to do</h2>
+    <p>
+      Research in the field has always circled the same handful of capabilities. No single system
+      does all of them well — most narrow that focus deliberately.
+    </p>
+    <div class="grid">
+      <div class="card"><span class="label">Reasoning</span><p>Drawing conclusions from evidence — from step-by-step logic to the fast, intuitive judgments most human problem-solving actually relies on.</p></div>
+      <div class="card"><span class="label">Knowledge</span><p>Representing facts and relationships about the world in a form a program can use and act on.</p></div>
+      <div class="card"><span class="label">Planning</span><p>Choosing actions toward a goal, often under uncertainty about what will happen next.</p></div>
+      <div class="card"><span class="label">Learning</span><p>Improving performance from data or experience, rather than being explicitly programmed for every case.</p></div>
+      <div class="card"><span class="label">Language</span><p>Reading, writing, and holding a conversation — the domain where large language models now dominate.</p></div>
+      <div class="card"><span class="label">Perception</span><p>Making sense of sensory input: images, speech, video, and other raw signals.</p></div>
+    </div>
+    <p>
+      A more ambitious goal sits above all of these: <em>artificial general intelligence</em>, a
+      system that could match human versatility across nearly any cognitive task, rather than
+      excelling at one narrow slice of it.
+    </p>
+  </section>
+ 
+  <section id="how">
+    <h2><span class="num">02</span>How today's systems get there</h2>
+    <p>
+      Modern AI is dominated by machine learning, and within that, by deep learning — neural
+      networks with many layers, trained on large amounts of data rather than hand-written rules.
+    </p>
+    <h3>Neural networks &amp; deep learning</h3>
+    <p>
+      A network of simple nodes, loosely modeled on neurons, learns to map inputs to outputs by
+      adjusting internal weights during training. Stack enough layers and the network starts
+      extracting increasingly abstract features on its own — edges, then shapes, then whole
+      concepts, without anyone specifying what those features should be.
+    </p>
+    <h3>Large language models</h3>
+    <p>
+      Trained to predict the next word across enormous bodies of text, these models absorb
+      patterns in language — and, incidentally, a great deal of world knowledge — well enough to
+      hold a conversation, write code, or summarize a document. They remain prone to confidently
+      stating things that are false, a failure mode usually called hallucination.
+    </p>
+    <div class="pull">
+      A neural network can, in principle, learn any function — the hard part is finding the
+      training data and computing power to get there.
+    </div>
+    <h3>Older, still-useful approaches</h3>
+    <p>
+      Symbolic logic, search algorithms, and probabilistic reasoning (Bayesian networks, decision
+      theory) predate the current deep-learning wave and still underpin planning systems, game
+      engines, and anywhere a decision needs to be explainable rather than just accurate.
+    </p>
+  </section>
+ 
+  <section id="applications">
+    <h2><span class="num">03</span>Where it already lives</h2>
+    <p>
+      AI stopped being exotic some time ago. It's quietly load-bearing in most of the software
+      people touch daily.
+    </p>
+    <div class="grid">
+      <div class="card"><span class="label">Search &amp; recommendation</span><p>Ranking results, surfacing what to watch or buy next, targeting ads.</p></div>
+      <div class="card"><span class="label">Assistants &amp; chatbots</span><p>Voice assistants, customer-support bots, and general-purpose conversational tools.</p></div>
+      <div class="card"><span class="label">Vision</span><p>Face and object recognition, photo labeling, autonomous-vehicle perception.</p></div>
+      <div class="card"><span class="label">Science &amp; medicine</span><p>Protein-structure prediction, faster drug-candidate screening, diagnostic support tools.</p></div>
+      <div class="card"><span class="label">Games &amp; simulation</span><p>Superhuman play in chess, Go, StarCraft, and poker; realistic non-player behavior.</p></div>
+      <div class="card"><span class="label">Mathematics</span><p>Tools that search for proofs, counter-examples, and optimized algorithms alongside human mathematicians.</p></div>
+    </div>
+  </section>
+ 
+  <section id="risks">
+    <h2><span class="num">04</span>What people worry about</h2>
+    <p>
+      The concerns split roughly into problems that are already happening and ones that might
+      happen if the technology keeps scaling.
+    </p>
+    <div class="riskbar">
+      <div class="risk-row"><span class="label">Bias</span><p>Systems trained on biased data reproduce and sometimes amplify that bias — in lending, hiring, and criminal-justice risk scoring.</p></div>
+      <div class="risk-row"><span class="label">Opacity</span><p>Complex models are often not explainable even by their own designers, which is a problem when a decision needs to be justified.</p></div>
+      <div class="risk-row"><span class="label">Misinformation</span><p>Generative tools make convincing fake text, images, and video cheap to produce at scale.</p></div>
+      <div class="risk-row"><span class="label">Jobs</span><p>Automation is projected to reshape or eliminate large categories of white-collar and creative work.</p></div>
+      <div class="risk-row"><span class="label">Concentration</span><p>The compute and data required for frontier models favor a small number of very large companies.</p></div>
+      <div class="risk-row"><span class="label">Environment</span><p>Training and running large models is power- and water-intensive, straining grids and local supplies.</p></div>
+      <div class="risk-row"><span class="label">Existential risk</span><p>A minority but prominent group of researchers argue sufficiently powerful, poorly aligned AI could pose a civilization-level threat.</p></div>
+    </div>
+    <p>
+      Opinion among AI researchers themselves is genuinely split on how seriously to weigh the
+      last item — some treat it as the field's central problem, others as a distraction from more
+      immediate harms.
+    </p>
+  </section>
+ 
+  <section id="history">
+    <h2><span class="num">05</span>How we got here</h2>
+    <div class="timeline">
+      <div class="tl-item"><span class="yr">1956</span>The field is founded at a Dartmouth workshop; early optimism follows within a decade.</div>
+      <div class="tl-item"><span class="yr">1970s–80s</span>Funding cuts and unmet promises produce the first "AI winter."</div>
+      <div class="tl-item"><span class="yr">Late 1980s</span>A second winter follows the collapse of the expert-systems market.</div>
+      <div class="tl-item"><span class="yr">2012</span>GPU-trained deep neural networks start beating older methods on benchmark tasks, reviving the field.</div>
+      <div class="tl-item"><span class="yr">2017</span>The transformer architecture arrives, setting up the current generation of language models.</div>
+      <div class="tl-item"><span class="yr">Nov 2022</span>ChatGPT launches and becomes the fastest-growing consumer application in history.</div>
+      <div class="tl-item"><span class="yr">2024–26</span>Reasoning models, math and coding gains, and mounting scrutiny over energy use, copyright, and labor impact.</div>
+    </div>
+  </section>
+ 
+  <section id="future">
+    <h2><span class="num">06</span>Open questions</h2>
+    <p>
+      Whether progress keeps compounding or plateaus is unresolved. Skeptics point out that every
+      technology so far has followed an S-curve rather than an endless climb; others argue this
+      one is different because the systems can, in principle, help improve themselves. Philosophers
+      remain divided on a separate question entirely — whether any of this amounts to genuine
+      understanding, or a very convincing simulation of it. Nobody currently has a way to test the
+      difference from the outside.
+    </p>
+  </section>
+</main>
+ 
+<footer>
+  Condensed and rewritten from the Wikipedia article <em>Artificial intelligence</em>, licensed under
+  CC BY-SA 4.0. Read the full article at
+  <a href="https://en.wikipedia.org/wiki/Artificial_intelligence">en.wikipedia.org/wiki/Artificial_intelligence</a>.
+</footer>
+ 
+</body>
+
+</html>
